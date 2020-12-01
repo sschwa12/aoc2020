@@ -23,12 +23,12 @@ print('part 1', x * y)
 
 # part 2
 def find_three_addends(nums: List[int], tgt: int) -> Tuple[int, int]:
-    for i, num in enumerate(sorted(nums)):
+    for num in sorted(nums):
         new_tgt = tgt - num
         addends = find_addends(nums, new_tgt)
         if addends != 'not found':
-            a1, a2 = addends
-            return 2020 - new_tgt, a1, a2
+            add1, add2 = addends
+            return 2020 - new_tgt, add1, add2
 
 
 a1, a2, a3 = find_three_addends(data, 2020)

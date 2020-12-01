@@ -28,7 +28,7 @@ def find_three_addends(nums: List[int], tgt: int) -> Tuple[int, int]:
         addends = find_addends(nums, new_tgt)
         if addends != 'not found':
             add1, add2 = addends
-            return 2020 - new_tgt, add1, add2
+            return tgt - new_tgt, add1, add2
 
 
 a1, a2, a3 = find_three_addends(data, 2020)

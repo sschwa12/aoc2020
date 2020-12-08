@@ -43,6 +43,7 @@ def p1():
 print('p1', p1())
 
 
+# got lucky and this worked just changing the jmps -> nops without trying nops -> jmps
 def p2():
     jmps = [i for i, val in enumerate(data) if val.startswith('jmp')]
     for index in jmps:

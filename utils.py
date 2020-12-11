@@ -10,3 +10,7 @@ def read_file(name, *, do_strip=True):
     if do_strip:
         res = list(map(str.strip, res))
     return res
+
+
+def flatten(l):
+    return [item for sublist in l for item in sublist]
